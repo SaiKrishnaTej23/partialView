@@ -5,7 +5,6 @@ import { Component, ComponentFactoryResolver, Input, ViewChild,
    AfterContentInit, AfterContentChecked,
    DoCheck, OnChanges, Injector, OnDestroy
 } from '@angular/core';
-import { DefaultPartialViewComponent } from '../default-partial-view/default-partial-view.component';
 
 @Component({
   selector: 'app-partial-view',

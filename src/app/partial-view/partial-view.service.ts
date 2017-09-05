@@ -1,7 +1,6 @@
 import { Injectable, ComponentFactoryResolver, OnInit,
    ComponentFactory, Injector, ApplicationRef, EmbeddedViewRef, ComponentRef } from '@angular/core';
 import { PartialViewComponent } from './partial-view/partial-view.component';
-import { DefaultPartialViewComponent } from './default-partial-view/default-partial-view.component';
 
 @Injectable()
 export class PartialViewService implements OnInit {
