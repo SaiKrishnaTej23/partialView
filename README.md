@@ -8,16 +8,20 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Using Partial View
 
-Include the 'PartialViewModule' in 'AppModule'
+`Include the 'PartialViewModule' in 'AppModule'`
 
 To launch the partial view from a component
+```     
+Import { PartialViewService } from 'partialView'
 
-`Import { PartialViewService } from 'partialView'`
-`constructor(private _partialViewService: PartialViewService){`
-`}`
-`open() {`
- ` this._partialViewService.open(ComponentToBeViewedInPartialView);`
-`}`
+constructor(
+private _partialViewService: PartialViewService
+){}
+
+open() {
+ this._partialViewService.open(ComponentToBeViewedInPartialView);
+ }
+ ```
     
 
 ## Build
