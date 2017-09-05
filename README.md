@@ -1,14 +1,24 @@
 # PartialView
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+This project was created with an intention to create a popup Modal similiar to bootstrap 4 using [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Using Partial View
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Include the 'PartialViewModule' in 'AppModule'
+
+To launch the partial view from a component
+
+`Import { PartialViewService } from 'partialView'`
+`constructor(private _partialViewService: PartialViewService){`
+`}`
+`open() {`
+ ` this._partialViewService.open(ComponentToBeViewedInPartialView);`
+`}`
+    
 
 ## Build
 
